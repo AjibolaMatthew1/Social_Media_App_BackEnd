@@ -23,6 +23,10 @@ app.add_middleware(
 # uvicorn main:app --reload
 # uvicorn app.main:app --reload - from a folder
 
+#Heroku setup
+#heroku login - first command in the terminal 
+#git push heroku main
+
 app.include_router(post.router)
 app.include_router(user.router)
 app.include_router(auth.router)
